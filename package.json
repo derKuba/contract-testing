@@ -1,0 +1,24 @@
+{
+  "name": "contract-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:contract": "hurl --test --glob contract-test/*.hurl --report-html ./reports --variables-file ./contract-test/contract-testing.env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derKuba/contract-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derKuba/contract-testing/issues"
+  },
+  "homepage": "https://github.com/derKuba/contract-testing#readme",
+  "dependencies": {
+    "@orangeopensource/hurl": "^1.8.0"
+  }
+}
