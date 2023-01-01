@@ -58,4 +58,9 @@ module.exports = async function (fastify, opts) {
 
     return randomJSON;
   });
+
+  fastify.post("/", async function (request, reply) {
+    const data = request.body;
+    return `Hello ${data.name}`;
+  });
 };
